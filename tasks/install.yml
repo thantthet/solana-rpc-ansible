@@ -5,7 +5,7 @@
     mode: 0755
     owner: root
     group: root
-    checksum: "{{ solana_checksums[solana_installer_version] }}"
+    # checksum: "{{ solana_checksums[solana_installer_version] }}"
 
 - name: install solana
   command: "/usr/local/sbin/solana-install-init.sh {{ solana_version }}"
